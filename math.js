@@ -1,18 +1,16 @@
-export function areaCirculo(radio) {
-    if (typeof radio !== 'number' || Number.isNaN(radio)) {
-      throw new Error('El radio debe ser un número');
-    }
-    if (radio < 0) {
-      throw new Error('El radio no puede ser negativo');
-    }
-    return Math.PI * radio * radio;
+
+function factorial(n) {
+    if (n < 0) return undefined;
+    if (n === 0 || n === 1) return 1;
+    return n * factorial(n - 1);
   }
   
-
-  export function invertirTexto(texto) {
-    if (typeof texto !== 'string') {
-      throw new Error('El parámetro debe ser un string');
-    }
-    return texto.split('').reverse().join('');
+  function fibonacci(n) {
+    if (n < 0) return undefined;
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
   }
-  module.exports = { areaCirculo, invertirTexto };
+  
+  module.exports = { factorial, fibonacci };
+  
