@@ -5,7 +5,7 @@ test('factorial de 5 debe ser 120', () => {
 });
 
 test('factorial de 0 debe ser 1', () => {
-  expect(factorial(0)).toBe(0);
+  expect(factorial(0)).toBe(1);
 });
 
 test('fibonacci de 6 debe ser 8', () => {
