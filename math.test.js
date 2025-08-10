@@ -1,4 +1,5 @@
-import { areaCirculo, invertirTexto } from './math.js';
+const { areaCirculo, invertirTexto } = require('./math')
+
 
 describe('areaCirculo', () => {
   test('Área con radio 3 ≈ 28.274333', () => {
