@@ -15,4 +15,4 @@ export function areaCirculo(radio) {
     }
     return texto.split('').reverse().join('');
   }
-  
+  module.exports = math;
